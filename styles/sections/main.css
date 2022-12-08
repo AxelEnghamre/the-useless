@@ -1,6 +1,6 @@
 /* main css */
 main {
-  max-width: 30rem;
+  width: fit-content;
   height: fit-content;
   margin: auto auto;
 }
