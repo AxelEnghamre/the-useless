@@ -1,0 +1,22 @@
+/* hero css */
+.hero {
+  width: 100vw;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--englishViolet);
+}
+
+.hero select {
+  width: 20rem;
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: var(--teaGreen);
+  color: var(--englishViolet);
+  border: none;
+  border-radius: 1rem;
+}
