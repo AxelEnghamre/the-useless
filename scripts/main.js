@@ -39,3 +39,31 @@ const feelings = [
     color: 'linear-gradient(to right, red , yellow)',
   },
 ];
+
+// event listeners
+
+select.addEventListener('change', () => {
+  // get the current feeling object from the select
+  const feeling = feelings[select.value];
+
+  // clear main
+  main.innerHTML = '';
+
+  // hydrate main with 100 outputs
+  for (let index = 0; index < 100; index++) {
+    output(feeling.feeling, feeling.color);
+  }
+});
+
+window.addEventListener('scroll', () => {
+  // get the current feeling object from the select
+  const feeling = feelings[select.value];
+
+  const bottomOfWindow = window.screenY + screen.height;
+  const bottomOfMain = main.offsetTop + main.clientHeight;
+
+  // when bottom of the window is near bottom of the bottom of the main
+  if (bottomOfWindow >= bottomOfMain) {
+    output(feeling.feeling, feeling.color);
+  }
+});
