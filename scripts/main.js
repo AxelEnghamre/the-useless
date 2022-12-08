@@ -58,6 +58,8 @@ window.addEventListener('scroll', () => {
 
   // when bottom of the window is near bottom of the bottom of the main
   if (bottomOfWindow + offset >= bottomOfMain) {
-    output();
+    for (let index = 0; index < 100; index++) {
+      output();
+    }
   }
 });
