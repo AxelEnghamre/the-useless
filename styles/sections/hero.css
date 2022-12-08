@@ -1,8 +1,10 @@
 /* hero css */
 .hero {
   width: 100vw;
+  padding: 1rem;
   min-height: 25vh;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
