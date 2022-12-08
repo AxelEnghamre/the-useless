@@ -1,0 +1,10 @@
+/* root css */
+/* extension of the style css */
+:root {
+  /* colors */
+  --englishViolet: #58355e;
+  --vermilin: #e03616;
+  --canary: #fff689;
+  --teaGreen: #cfffb0;
+  --carolinaBlue: #5998c5;
+}
