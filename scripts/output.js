@@ -9,10 +9,11 @@ const output = () => {
 
   if (feeling.feeling === 'challenged') {
     // set the color
-    p.style.color = 'transparent';
+    //p.style.color = 'transparent';
     p.style.background = feeling.color;
-    p.style.backgroundClip = 'text';
+    p.style.webkitBackgroundClip = 'text';
     p.style.webkitTextFillColor = 'transparent';
+    //p.style.textFillColor = 'transparent';
 
     // set the rotation
     if (main.hasChildNodes()) {
@@ -22,8 +23,6 @@ const output = () => {
       const lastPDeg = parseInt(lastPTransformValues[4]);
 
       p.style.transform = `rotate3d(0, 0, 1, ${lastPDeg + 1}deg)`;
-
-      console.log('rot: ' + lastPDeg);
     } else {
       // start the rotation
       p.style.transform = 'rotate3d(0, 0, 1, 0deg)';
@@ -31,6 +30,5 @@ const output = () => {
   } else {
     p.style.color = feeling.color;
   }
-
   main.append(p);
 };

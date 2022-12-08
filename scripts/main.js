@@ -52,11 +52,12 @@ select.addEventListener('change', () => {
 });
 
 window.addEventListener('scroll', () => {
-  const bottomOfWindow = window.screenY + screen.height;
+  const bottomOfWindow = window.scrollY + screen.height;
   const bottomOfMain = main.offsetTop + main.clientHeight;
+  const offset = 50;
 
   // when bottom of the window is near bottom of the bottom of the main
-  if (bottomOfWindow >= bottomOfMain) {
+  if (bottomOfWindow + offset >= bottomOfMain) {
     output();
   }
 });
