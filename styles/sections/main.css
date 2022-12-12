@@ -3,4 +3,5 @@ main {
   width: fit-content;
   height: fit-content;
   margin: auto auto;
+  font-size: 2rem;
 }

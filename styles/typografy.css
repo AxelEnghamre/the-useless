@@ -1,5 +1,16 @@
 /* typografy css */
 /* extension of the style css */
+
+@font-face {
+  font-family: rubic;
+  src: url('./fonts/RubikVinyl-Regular.woff');
+}
+
+@font-face {
+  font-family: rubic2;
+  src: url('./fonts/RubikVinyl-Regular.woff2');
+}
+
 h1 {
   font-size: 5rem;
 }
