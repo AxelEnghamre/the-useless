@@ -18,5 +18,5 @@ Add the installation instructions.
 
 Tested by the following people:
 
-1. Jane Doe
-2. John Doe
+1. Robin Persson
+2. Hampus Selldén
