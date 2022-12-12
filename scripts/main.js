@@ -51,6 +51,8 @@ select.addEventListener('change', () => {
   }
 });
 
+let warning = false;
+
 window.addEventListener('scroll', () => {
   const bottomOfWindow = window.scrollY + screen.height;
   const bottomOfMain = main.offsetTop + main.clientHeight;
@@ -61,5 +63,11 @@ window.addEventListener('scroll', () => {
     for (let index = 0; index < 100; index++) {
       output();
     }
+  }
+
+  // warn the user
+  if (bottomOfWindow > 10000 && !warning) {
+    alert('I will not be responsible for any crashes');
+    warning = true;
   }
 });
