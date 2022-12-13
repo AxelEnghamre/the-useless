@@ -13,7 +13,7 @@ const output = () => {
     p.style.background = feeling.color;
     p.style.webkitBackgroundClip = 'text';
     p.style.webkitTextFillColor = 'transparent';
-    //p.style.textFillColor = 'transparent';
+    //p.style.textFillColor = 'transparent'
 
     // set the rotation
     if (main.hasChildNodes()) {
